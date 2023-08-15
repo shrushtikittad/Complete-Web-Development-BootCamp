@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, width, borders and background</title>
+    <style>
+        #firstPara{
+            background-color: rgb(234, 201, 158);
+            height: 100px;
+            width: 570px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: brown;
+            border-radius: 10px;/*rounded corners*/
+            /* border: 4px solid seagreen; */
+        }
+
+        #secondPara{
+            background-color: lightblue;
+            height: 100px;
+            width: 570px;
+            border-top: 2px solid blueviolet;
+            border-right: 2px solid red;
+            border-left: 2px solid brown;
+            border-bottom: 2px solid green;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 20px;
+        }
+
+        #thirdPara{
+            height: 500px;
+            width: 600px;
+            background-image: url(https://th.bing.com/th/id/OIP.kYsgSghA4yO1A0i2wAqVqAHaE8?pid=ImgDet&rs=1);
+            border: 2px solid black;
+            /* background-repeat: repeat-x;
+            background-repeat: repeat-y; */
+            background-repeat: no-repeat;
+            background-position: center;
+            /* background-position: 190px 270px;
+            background-position: center center;
+            background-position: top center;
+            background-position: top left;
+            background-position: center left; */
+        }
+    </style>
+</head>
+<body>
+    <h3>This is paragraph</h3>
+    <p id="firstPara">This is first paragraph</p>
+
+    <h3>This is second paragraph</h3>
+    <p id="secondPara">This is second paragraph</p>
+
+    <h3>This is third paragraph</h3>
+    <p id="thirdPara">This is third paragraph</p>
+</body>
+</html>

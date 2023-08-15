@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table 2</title>
+    <style>table,th,td{ 
+        padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }</style>
+</head>
+<body>
+    <h4>Time Table</h4>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Days</th>
+                <th colspan="6">Time </th>
+                <tr textalign="right">
+                    <th>8.00</th>
+                    <th>9.00</th>
+                    <th>10.00</th>
+                    <th>11.00</th>
+                    <th>11.30</th>
+                    <th>12.30</th>
+                </tr>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mon</td>
+                <td>Course1</td>
+                <td>Course2</td>
+                <td>Course3</td>
+                <td rowspan="5">
+                    <div>B</div>
+                    <div>R</div>
+                    <div>E</div>
+                    <div>A</div>
+                    <div>K</div>
+                </td>
+                <td>Course 5</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tue</td>
+                <td colspan="2"></td>
+                <td>Course2</td>
+                <td>Course 4</td>
+                <td>Course 1</td>
+            </tr>
+            <tr>
+                <td>Wed</td>
+                <td>Course 3</td>
+                <td colspan="2"></td>
+                <td>Course 2</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Thu</td>
+                <td rowspan="2">Course 4</td>
+                <td>Course 2</td>
+                <td>Course 3</td>
+                <td colspan="2" rowspan="2">Thesis</td>
+            </tr>
+            <tr>
+                <td>Fri</td>
+                <td></td>
+                <td>Course 1</td>
+            </tr>    
+        </tbody>
+    </table>
+</body>
+</html>

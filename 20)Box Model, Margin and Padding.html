@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model, margin and padding</title>
+    <style>
+        *{
+            /* "*" is universal selector */
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            background-color: antiquewhite;
+            border: 1mm solid purple;
+            /* We can set padding/margin for top, bottom, left and right like this  */
+            /* padding-left: 10px;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding: 80px; */
+            padding: 1px 48px 15px 74px;/* padding/margin: top right bottom left  */
+            /* padding: y(top/bottom) x(left/right); */
+            margin: 30px;
+            border-radius: 20px;
+            width: 440px;
+            height: 200px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This my heading</h3>
+    <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, nulla perferendis! Ipsum nemo aperiam culpa ipsa soluta amet fuga, corporis pariatur iusto dolorem.</p>
+    </div>
+
+    <div class="container">
+        <h3>This my heading</h3>
+    <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, nulla perferendis! Ipsum nemo aperiam culpa ipsa soluta amet fuga, corporis pariatur iusto dolorem.</p>
+    </div>
+
+    <div class="container">
+        <h3>This my heading</h3>
+    <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, nulla perferendis! Ipsum nemo aperiam culpa ipsa soluta amet fuga, corporis pariatur iusto dolorem.</p>
+    </div>
+</body>
+</html>

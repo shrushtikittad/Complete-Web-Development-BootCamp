@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar{
+            background-color: rgb(248, 218, 141);
+            border-radius: 30px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float: left;   /*Only float is used then bullet dots are visible and if list-style is none then they will be gone*/
+            list-style: none; /*after .navbar li style the background color will not be visible and so we use overflow in .navbar ul*/
+            margin: 14px 3px;
+        }
+        .navbar li a{
+            padding: 5px 10px;
+            text-decoration: none;/*The underline for a href will be gone*/
+            color: brown;
+        }
+        .navbar li a:hover{
+            color: aliceblue;
+        }
+        .search{
+            float: right;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            border: 2px solid  rgb(248, 218, 141);
+            border-radius: 14px;
+            padding: 3px;
+            width: 129px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

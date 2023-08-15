@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            border: 2px solid red;
+            background-color: rgb(243, 243, 127);
+            margin: 23px 12px;
+
+            /* box-shadow: offset x offset y color;
+            box-shadow: offset x offset y blur-radius color;
+            box-shadow: offset x offset y blur-radius spread-radiuscolor;
+            box-shadow: 12px 12px 10px gray;
+            box-shadow: 12px 12px 10px 10px yellow; */
+            /* box-shadow: -12px -12px 10px 10px rgb(84, 24, 53, 0.5); 0.5 is alpha value that decides darkness of color*/
+            box-shadow: inset 32px 22px lightgreen;
+            box-shadow: 3px 4px green, 3px 4px red;
+        }
+        .card h2{
+            text-shadow: 3px 2px 2px white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>Card 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aliquam laudantium, quam quasi accusantium
+                maxime pariatur earum adipisci repellendus magni reprehenderit, impedit facilis vitae ad odio voluptatum
+                maiores vero aperiam quas error molestiae sit?</p>
+        </div>
+    </div>
+    <div class="card" id="card-2">
+        <h2>Card 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aliquam laudantium, quam quasi accusantium
+            maxime pariatur earum adipisci repellendus magni reprehenderit, impedit facilis vitae ad odio voluptatum
+            maiores vero aperiam quas error molestiae sit?</p>
+    </div>
+    <div class="card" id="card-3">
+        <h2>Card 3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aliquam laudantium, quam quasi accusantium
+            maxime pariatur earum adipisci repellendus magni reprehenderit, impedit facilis vitae ad odio voluptatum
+            maiores vero aperiam quas error molestiae sit?</p>
+    </div>
+</body>
+
+</html>

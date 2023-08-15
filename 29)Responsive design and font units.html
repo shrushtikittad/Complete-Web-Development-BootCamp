@@ -1,0 +1,53 @@
+<!--Responsive design
+        -Endless new resolution and devices are difficult to support for a web developer
+        -Responsive design is a way for a web developer to make his website adapt to all the devices and resolutions
+        -Responsive design is a necessity and not a luxury anymore
+    (phone, tablet, desktop,etc - responsive towards width of display
+    
+    Various techniques to achieve responsive design
+    -Setting up the view port (boiler plate)
+    -Use max-width or max-height
+    -Using CSS media queries
+    -Using rem/vh/vv units over pixels)-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Size units</title>
+        <style>
+            html{
+                font-size: 25px;
+            }
+            .container{
+                width: 400px;
+                /* height: 344 px; */
+                height: 100vh;
+                width: 100vw;
+                border: 2px solid red;
+                font-size: 10px;
+            }
+            h1{
+                text-align: center;
+            }
+            #first{
+                /* em units - jo bhi parent container h uske relative font size set krti h */
+                font-size: 3em;
+                padding: 3em; /*consider font-size: 3em -->9em*/
+            }
+            #second{
+                /*rem units- base html font size ke relative chalta h*/
+                font-size: 3rem;
+                padding: 3rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="first">This is first heading</h3>
+            <h1 id="second">This is second heading</h3>
+            <h1 id="third">This is third heading</h3>
+        </div>
+    </body>
+    </html>

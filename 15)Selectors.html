@@ -1,0 +1,57 @@
+<!-- CSS selectors are used to find element whose property will be set
+   Selectors are used to target the html elements
+   Selectors makes it easy for us to easily target single/multiple HTML elements in markup
+   
+TYPES OF BASIC CSS SELECTORS-
+1. CSS element Selector
+2. CSS id Selector
+3. CSS class Selector
+4. CSS grouping Selector
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Selector</title>
+   <style>
+      /* ELEMENT SELECTOR
+      p{
+         color:red 
+      }
+      } */
+      
+      /* ID SELECTOR */
+      #firstPara{            /*"#"" is used to call id and "." is used to call class 
+                              "comment form is in as CSS because its present in style" */
+         color: red;
+      }
+      
+      /* CLASS SELECTOR */
+      .redElement{            
+         color: blue;
+      }
+      .bgBlue{
+         background-color: lightgray;
+      }
+
+      /* GROUP SELECTOR */
+      span, footer{
+         background-color: lightpink;
+      }
+   </style>
+   <style></style>
+</head>
+<body>
+   <h3>Paragraph</h3>
+   <p id="firstPara">This is first Paragraph</p>
+   <p id="secondPara" class="redElement bgBlue">This is second Paragraph</p>
+   <p>This is third Paragraph</p>
+   <div>
+      <span>This is span</span>
+   </div>
+      <br>
+   <footer>Hello Footer</footer>
+</body>
+</html> 
